@@ -30,9 +30,12 @@ public class Employee {
 
     public Employee(String firstName, String lastName, String emailId) {
         super();
+        System.out.println("1----------------- " + lastName);
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailId = emailId;
+        System.out.println("2----------------- " + lastName);
+
     }
 
     public long getId() {
@@ -56,7 +59,11 @@ public class Employee {
     }
 
     public void setLastName(String lastName) {
+        System.out.println("3----------------- " + lastName);
+
         this.lastName = lastName;
+        System.out.println("4----------------- " + lastName);
+
     }
 
     public String getEmailId() {
